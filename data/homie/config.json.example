@@ -1,0 +1,20 @@
+{
+  "name": "Device Display Name",
+  "device_id": "homie-device-label",
+  "device_stats_interval": 300,
+  "wifi": {
+    "ssid": "mynetworkSSID",
+    "password": "thisismypassword"
+  },
+  "mqtt": {
+    "host": "192.168.1.123",
+    "port": 1883,
+    "base_topic": "homie/",
+    "auth": true,
+    "username": "mqttAuthName",
+    "password": "mqttAuthPW"
+  },
+  "ota": {
+    "enabled": true
+  }
+}
