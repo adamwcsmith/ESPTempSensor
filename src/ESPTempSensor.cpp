@@ -13,7 +13,7 @@ const char *__FLAGGED_FW_VERSION = "\x6a\x3f\x3e\x0e\xe1" FW_VERSION "\xb0\x30\x
 
 #include <Homie.h>
 
-#define DS18B20_USECELSIUS false
+#define DS18B20_USECELSIUS false  // setting here hasn't actually worked for me, add to compile-time -D arg?
 #define DS18B20_MULTISENSOR true
 #include "DS18B20Node.hpp"
 
@@ -34,7 +34,6 @@ void setup() {
   Homie.disableResetTrigger();
 
   Homie.setup();
-
 }
 
 void loop() {
